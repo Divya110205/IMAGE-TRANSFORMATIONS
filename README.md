@@ -9,19 +9,29 @@ Anaconda - Python 3.7
 
 ## Algorithm:
 ### Step1:
-<br>
+Import necessary libraries such as OpenCV, NumPy, and Matplotlib for image processing and visualization.
 
 ### Step2:
-<br>
+Read the input image using cv2.imread() and store it in a variable for further processing.
 
 ### Step3:
-<br>
+Apply various transformations like translation, scaling, shearing, reflection, rotation, and cropping by defining corresponding functions:
+
+1.Translation moves the image along the x or y-axis.
+
+2.Scaling resizes the image by scaling factors.
+
+3.Shearing distorts the image along one axis. 
+
+4.Reflection flips the image horizontally or vertically. 5.Rotation rotates the image by a given angle.
 
 ### Step4:
-<br>
+Display the transformed images using Matplotlib for visualization. Convert the BGR image to RGB format to ensure proper color representation.
 
 ### Step5:
-<br>
+Save or display the final transformed images for analysis and use plt.show() to display them inline in Jupyter or compatible environments.
+
+
 
 ## Program:
 ```
@@ -107,28 +117,32 @@ display_image(cropped_image, 'Cropped Image')
 
 ### ii) Image Scaling
 
-![Screenshot 2024-09-30 155450](https://github.com/user-attachments/assets/97727830-8de4-46f6-89f2-7dabd1a92089)
+![Screenshot 2024-09-30 155457](https://github.com/user-attachments/assets/8e1666ce-3ef1-4e9c-91d3-7074618454c4)
+
 
 
 
 ### iii)Image shearing
-![Screenshot 2024-09-30 155457](https://github.com/user-attachments/assets/0264438f-19ef-4c0b-8888-2744915bea7d)
+
+![Screenshot 2024-09-30 155502](https://github.com/user-attachments/assets/d59ed9ee-ec82-4414-b20f-271fdb6d1000)
 
 
 
 ### iv)Image Reflection
-![Screenshot 2024-09-30 155502](https://github.com/user-attachments/assets/282b2818-94b4-42cd-8341-aec13a41bb52)
+
+![Screenshot 2024-09-30 155510](https://github.com/user-attachments/assets/a6a65b15-5273-4cbc-9e33-8e0c39576d0f)
 
 
 
 
 ### v)Image Rotation
-![Screenshot 2024-09-30 155510](https://github.com/user-attachments/assets/45eae03c-dbdc-468a-82d2-7b506dbe4212)
+
+![Screenshot 2024-09-30 155516](https://github.com/user-attachments/assets/10764ab1-64e7-43eb-9d8c-4d8d1177b955)
 
 
 
 ### vi)Image Cropping
-![Screenshot 2024-09-30 155516](https://github.com/user-attachments/assets/f64ecf85-e9c3-4c61-8d0a-9139efeed268)
+![Screenshot 2024-09-30 155522](https://github.com/user-attachments/assets/3ec82a9d-ddab-4cf4-9018-a623baabeccd)
 
 
 
