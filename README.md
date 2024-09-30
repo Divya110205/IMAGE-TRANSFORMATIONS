@@ -114,6 +114,7 @@ display_image(cropped_image, 'Cropped Image')
 ### i)Image Translation
 ![Screenshot 2024-09-30 155441](https://github.com/user-attachments/assets/7b5e3bef-5afa-457b-bf8a-fbce16448426)
 
+![Screenshot 2024-09-30 155450](https://github.com/user-attachments/assets/28350396-fee8-4038-9d65-e7577cf8451b)
 
 ### ii) Image Scaling
 
