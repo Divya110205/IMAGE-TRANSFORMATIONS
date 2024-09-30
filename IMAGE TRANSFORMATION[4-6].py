@@ -1,37 +1,30 @@
 
 ##iv)Image Reflection
-import numpy as np
-import cv2
-import matplotlib.pyplot as plt
-input_image=cv2.imread("got.jpg") 
-input_image=cv2.cvtColor(input_image,) 
-plt.axis("off") 
-plt.imshow(input_image)
-plt.show()
-rows, cols, dim = 
-M_x=np.float
-reflected_img_xaxis=cv2.warpPerspective(input_image,M_x,(cols,rows))
-reflected_img_yaxis=cv2.warpPerspective(input_image,M_y,(cols,rows))
-plt.imshow(reflected_)
-plt.show()
+def reflect(img):
+    reflected = cv2.flip(img, 1)  # 1 for horizontal flip
+    return reflected
+
+reflected_image = reflect(image)
+display_image(reflected_image, 'Reflected Image')
+
 
 ##v)Image Rotation:
-import numpy as np
-import cv2
-import matplotlib.pyplot as plt
-input_image=cv2.imread("got.jpg") 
-input_image=cv2.cvtColor(input_image, cv2.COLOR_BGR2RGB)
-angle=np.radians(45)
-M=np.float32([[np.cos(angle),-(np.sin(angle)),0],
-               [np.
-rotated_img=
+def rotate(img, angle):
+    (h, w) = img.shape[:2]
+    center = (w // 2, h // 2)
+    M = cv2.getRotationMatrix2D(center, angle, 1.0)
+    rotated = cv2.warpAffine(img, M, (w, h))
+    return rotated
+
+rotated_image = rotate(image, 45)
+display_image(rotated_image, 'Rotated Image')
 
 ##vi)Image Cropping:
 
-import numpy as np
-import cv2
-import matplotlib.pyplot as plt
-input_image=cv2.imread("got.jpg") 
-input_image=cv2.cvtColor(input_image,
-plt.show()
+def crop(img, start_row, start_col, end_row, end_col):
+    cropped = img[start_row:end_row, start_col:end_col]
+    return cropped
+
+cropped_image = crop(image, 50, 50, 200, 200)
+display_image(cropped_image, 'Cropped Image')
 
