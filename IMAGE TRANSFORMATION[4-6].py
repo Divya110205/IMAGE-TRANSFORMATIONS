@@ -1,3 +1,5 @@
+#Developed by: DIVYA.A
+#Register no: 212222230034
 
 ##iv)Image Reflection
 def reflect(img):
