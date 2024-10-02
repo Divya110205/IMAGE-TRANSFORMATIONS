@@ -1,3 +1,5 @@
+#Developed by: DIVYA.A
+#Register no: 212222230034
 
 ##i)Image Translation
 import cv2
